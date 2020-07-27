@@ -25,3 +25,275 @@
     url("../fonts/source-sans-pro-v13-latin-900.woff2") format("woff2"),
     url("../fonts/source-sans-pro-v13-latin-900.woff") format("woff");
 }
+
+/* :root {
+  --main-color: #97989c;
+  --title-color: #231f20;
+} */
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #46464e;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: #231f20;
+}
+
+p {
+  margin: 0;
+  line-height: 25px;
+}
+
+a,
+button {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+/* header */
+
+.info {
+  background: url(../images/collection/Shape1.png) no-repeat top right;
+}
+
+.header {
+  padding-top: 55px;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav__link {
+  display: inline;
+  padding-left: 55px;
+}
+
+.header-nav__link:nth-child(1) {
+  padding-left: 0;
+}
+
+.header-nav__url {
+  font-weight: 700;
+  color: #231f20;
+}
+
+.header-search {
+  position: relative;
+}
+
+.header-search__input {
+  width: 250px;
+  height: 45px;
+  padding: 0 50px 0 20px;
+  border: 2px solid #231f20;
+  border-radius: 50px;
+}
+
+.header-search__img {
+  position: absolute;
+  right: 15px;
+  bottom: 12px;
+}
+
+/* Collection */
+
+.collection {
+  padding: 115px 0 100px;
+}
+
+.collection-inner,
+.furniture-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collection-inner__left {
+  width: 33.33333%;
+  padding-top: 100px;
+}
+
+.collection-inner__left-title {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 900;
+  padding-bottom: 55px;
+}
+
+.collection-inner__left-text {
+  padding-bottom: 40px;
+}
+
+.collection-inner__left-price {
+  font-size: 22px;
+  font-weight: 700;
+  color: #231f20;
+  margin-bottom: 80px;
+}
+
+.collection-inner__left-btn,
+.furniture-inner__right-btn,
+.discounts-inner__tab__btn {
+  display: block;
+  width: 250px;
+  height: 68px;
+  color: #fff;
+  background-color: #53c0c7;
+  border: 0;
+  margin-top: 80px;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.collection-inner__left-btn:hover,
+.furniture-inner__right-btn:hover,
+.discounts-inner__tab__btn:hover {
+  background-color: #53bfc796;
+  color: #000;
+}
+
+/* Furniture */
+
+.furniture {
+  padding: 100px 0 80px;
+}
+
+.furniture-inner__right {
+  width: 33.33333%;
+}
+
+.furniture-inner__right__text1 {
+  font-weight: 700;
+  color: #231f20;
+  padding: 5px 0;
+  border-bottom: 2px solid #231f20;
+}
+
+.furniture-inner__right-title {
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 58px;
+  padding: 42px 0 50px;
+}
+
+.furniture-inner__right-btn {
+  margin-top: 68px;
+}
+
+/* Discounts */
+
+.discounts {
+  background: url(../images/discouns/Shape2.png) no-repeat top left;
+  padding: 140px 0 70px;
+}
+
+.discounts-inner__title {
+  font-size: 54px;
+  line-height: 58px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.discounts-inner__tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.discounts-inner__tab {
+  width: 33.33333%;
+  text-align: center;
+}
+
+.discounts-inner__tab__btn {
+  display: inline-block;
+  margin-top: 35px;
+}
+
+.discounts-inner__tab-title,
+.discounts-inner__tab-price {
+  font-size: 22px;
+  font-weight: 900;
+  color: #231f20;
+  padding: 35px 0 20px;
+}
+
+.discounts-inner__tab-price {
+  font-size: 18px;
+  padding-bottom: 35px;
+}
+
+.discounts-inner__tab-red {
+  color: #d1232a;
+}
+
+.discounts-inner__tab-delivery {
+  border-left: 1px solid #4f4c4d;
+  padding-left: 8px;
+  margin-left: 8px;
+}
+
+/* Gallery */
+
+.gallery-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.gallery-card:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery-card:nth-child(2),
+.gallery-card:nth-child(3) {
+  grid-column: span 2;
+}
+
+.gallery-card:nth-child(4) {
+  grid-row: span 2;
+}
+
+.gallery-card:nth-child(5) {
+  grid-column: span 3;
+  grid-row: span 2;
+}
