@@ -191,7 +191,7 @@ ul {
 .collection-inner__left-btn:hover,
 .furniture-inner__right-btn:hover,
 .discounts-inner__tab__btn:hover {
-  background-color: #53bfc796;
+  background-color: #aad5d8;
   color: #000;
 }
 
@@ -238,7 +238,7 @@ ul {
 
 .discounts {
   background: url(../images/discouns/Shape2.png) no-repeat top left;
-  padding: 140px 0 70px;
+  padding: 140px 0 150px;
 }
 
 .discounts-inner__title {
@@ -289,11 +289,13 @@ ul {
   width: 300px;
   max-width: 100%;
   height: auto;
+  border: 1px solid rgb(90, 90, 90);
 }
 
 .discounts-inner__tab-hair,
 .discounts-inner__tab-table,
 .discounts-inner__tab-luminaire {
+  position: relative;
   margin-right: 89px;
 }
 
@@ -303,9 +305,30 @@ ul {
   margin-right: 0;
 }
 
+.discounts-inner__tab-middle {
+  position: absolute;
+  width: 300px;
+  transform: translateY(-100px);
+  border: 1px solid rgb(90, 90, 90);
+  padding: 0 10px 10px;
+  background-color: #ffffffde;
+  transition: 0.3s all;
+  opacity: 0;
+}
+
+.discounts-inner__tab-hair:hover .discounts-inner__tab-middle,
+.discounts-inner__tab-table:hover .discounts-inner__tab-middle,
+.discounts-inner__tab-luminaire:hover .discounts-inner__tab-middle {
+  opacity: 1;
+  transform: translateY(-165px);
+}
+
 .discounts-inner__tab__btn {
   display: inline-block;
-  margin-top: 35px;
+  width: 125px;
+  height: 34px;
+  margin-top: 25px;
+  border: 1px solid rgb(122, 122, 122);
 }
 
 .discounts-inner__tab-title,
@@ -313,12 +336,11 @@ ul {
   font-size: 22px;
   font-weight: 900;
   color: #231f20;
-  padding: 35px 0 20px;
+  padding: 20px 0 20px;
 }
 
 .discounts-inner__tab-price {
   font-size: 18px;
-  padding-bottom: 35px;
 }
 
 .discounts-inner__tab-red {
@@ -329,6 +351,13 @@ ul {
   border-left: 1px solid #4f4c4d;
   padding-left: 8px;
   margin-left: 8px;
+}
+
+.discounts-inner__tab-delivery__img {
+  width: 20px;
+  max-width: 100%;
+  height: auto;
+  margin-left: 5px;
 }
 
 /* Gallery */
