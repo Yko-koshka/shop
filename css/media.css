@@ -1,0 +1,262 @@
+@media (max-width: 1200px) {
+  /* Burger */
+
+  .header__burger {
+    display: block;
+    width: 90px;
+  }
+
+  .header-nav {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #53c0c7;
+    z-index: 10;
+    padding: 75px 0;
+    transform: translateX(100%);
+    transition: 0.3s all linear;
+  }
+
+  .header-nav_active {
+    transform: translateX(0);
+  }
+
+  .header-nav__url {
+    display: block;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .header-nav__close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+  }
+
+  .header-nav__close-line {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+  }
+
+  .header-nav__close-line:first-child {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .header-nav__close-line:last-child {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+
+  /* Collection and Furniture  */
+  .collection-inner {
+    flex-direction: column-reverse;
+  }
+
+  .collection-inner__left,
+  .furniture-inner__right {
+    width: 60%;
+    text-align: center;
+    padding-top: 40px;
+    margin: 0 auto;
+  }
+
+  .collection-inner__left-title,
+  .furniture-inner__right-title {
+    font-size: 48px;
+    padding-bottom: 16px;
+  }
+
+  .collection-inner__left-btn,
+  .furniture-inner__right-btn {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .furniture-inner {
+    flex-wrap: wrap;
+  }
+
+  .furniture-inner__left {
+    width: 100%;
+  }
+
+  /* Gallery */
+
+  .gallery {
+    display: none;
+  }
+
+  /* Join */
+
+  .join-inner {
+    flex-direction: column;
+  }
+
+  .join-inner__left,
+  .join-inner__right {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .join-inner__left-text {
+    padding-bottom: 60px;
+  }
+
+  .join-inner__right-form__btn {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 769px) {
+  /* Header */
+
+  .header-logo {
+    display: none;
+  }
+
+  .header-basket__img {
+    padding-left: 26px;
+  }
+
+  /* Collection and Furniture  */
+
+  .collection {
+    padding: 150px 0 50px;
+  }
+
+  .furniture {
+    padding: 50px 0 80px;
+  }
+
+  .collection-inner__left,
+  .furniture-inner__right {
+    width: 100%;
+  }
+  /* Discounts */
+
+  .discounts {
+    padding: 45px 0 70px;
+  }
+
+  .discounts-inner__tab-active {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .discounts-inner__tab-elem {
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .discounts-inner__tab-delivery,
+  .discounts-inner__tab-delivery__img {
+    display: none;
+  }
+
+  .discounts-inner__tab-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  /* Join */
+
+  .join {
+    padding: 80px 0 80px;
+  }
+
+  .join-inner__left,
+  .join-inner__right {
+    width: 100%;
+  }
+
+  .join-inner__right-form__input {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .join-inner__right-form__btn {
+    width: 100%;
+  }
+
+  /* Footer */
+
+  .footer-inner {
+    flex-direction: column;
+    padding: 65px 0 50px;
+  }
+
+  .footer-inner__left,
+  .footer-inner__right {
+    width: 100%;
+  }
+
+  .footer-inner__right-bottom {
+    position: inherit;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .footer-bottom__text {
+    text-align: center;
+  }
+
+  .footer-inner__left-depart,
+  .footer-inner__left-contact {
+    flex-wrap: wrap;
+  }
+
+  .footer-inner__left-lists {
+    margin: 0 20px 20px 0;
+  }
+
+  .footer-inner__left-lists:nth-child(4) {
+    margin-right: 0;
+  }
+
+  .footer-inner__right-link:nth-child(1) {
+    padding-left: 0;
+  }
+
+  .footer-bottom {
+    padding: 15px 0;
+    border-top: 1px solid #9f9f9f;
+  }
+}
+
+@media (max-width: 524px) {
+  /* Header */
+
+  .header-search__input {
+    width: 100%;
+  }
+  /* Collection and Furniture  */
+
+  .collection-inner__left-title,
+  .furniture-inner__right-title {
+    font-size: 30px;
+  }
+
+  .collection-inner__left-btn {
+    border: 1px solid #000;
+  }
+
+  /* Footer */
+
+  .footer-inner__left-depart,
+  .footer-inner__left-contact {
+    justify-content: flex-start;
+  }
+}

@@ -5,89 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="page description" />
     <title>shop</title>
+
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
-    <div class="info">
-      <header class="header">
-        <div class="container">
-          <div class="header-inner">
-            <div class="header-logo">
-              <a href="#!"
-                ><img
-                  class="header-logo__img"
-                  src="./images/header/republic.png"
-                  alt="logo"
-              /></a>
-            </div>
-            <nav class="header-nav">
-              <ul class="header-nav__links">
-                <li class="header-nav__link">
-                  <a class="header-nav__url" href="#!">Home</a>
-                </li>
-                <li class="header-nav__link">
-                  <a class="header-nav__url" href="#!">Bedroom</a>
-                </li>
-                <li class="header-nav__link">
-                  <a class="header-nav__url" href="#!">Lounge</a>
-                </li>
-                <li class="header-nav__link">
-                  <a class="header-nav__url" href="#!">Kitchen</a>
-                </li>
-                <li class="header-nav__link">
-                  <a class="header-nav__url" href="#!">lighting</a>
-                </li>
-              </ul>
-            </nav>
-
-            <form class="header-search">
-              <input
-                class="header-search__input"
-                type="text"
-                placeholder="Find something..."
-              />
-              <input
-                class="header-search__img"
-                type="image"
-                src="./images/header/search.png"
-                alt="search"
-              />
-            </form>
-            <a class="header-basket__img" href="#!"
-              ><img src="./images/header/basket.png" alt="basket"
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="header-logo">
+            <a href="#!"
+              ><img
+                class="header-logo__img"
+                src="./images/header/republic.png"
+                alt="logo"
             /></a>
           </div>
-        </div>
-      </header>
+          <nav class="header-nav">
+            <ul class="header-nav__links">
+              <li class="header-nav__link">
+                <a class="header-nav__url" href="#home">Home</a>
+              </li>
+              <li class="header-nav__link">
+                <a class="header-nav__url" href="#armchairs">Armchairs</a>
+              </li>
+              <li class="header-nav__link">
+                <a class="header-nav__url" href="#discounts">Discounts</a>
+              </li>
+              <li class="header-nav__link">
+                <a class="header-nav__url" href="#gallery">Gallery</a>
+              </li>
+              <li class="header-nav__link">
+                <a class="header-nav__url" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+            <div class="header-nav__close">
+              <div class="header-nav__close-line"></div>
+              <div class="header-nav__close-line"></div>
+            </div>
+          </nav>
 
-      <section class="collection">
-        <div class="container">
-          <div class="collection-inner">
-            <div class="collection-inner__left">
-              <h1 class="collection-inner__left-title">Premium collection</h1>
-              <p class="collection-inner__left-text">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismorem ipsum dolor sit amet, consectetuer
-                adipiscing elit
-              </p>
-              <span class="collection-inner__left-price">£2,300</span>
-              <button class="collection-inner__left-btn">
-                View the collection
-              </button>
-            </div>
-            <div class="collection-inner__right">
-              <img
-                class="collection-inner__right-img"
-                src="./images/collection/collection.jpg"
-                alt="collection"
-              />
-            </div>
+          <form class="header-search">
+            <input
+              class="header-search__input"
+              type="text"
+              placeholder="Find something..."
+            />
+            <input
+              class="header-search__img"
+              type="image"
+              src="./images/header/search.png"
+              alt="search"
+            />
+          </form>
+          <a class="header-basket__img" href="#!"
+            ><img src="./images/header/basket.png" alt="basket"
+          /></a>
+          <div class="header__burger burger">
+            <div class="line line_first"></div>
+            <div class="line line_second"></div>
+            <div class="line line_third"></div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </header>
 
-    <section class="furniture">
+    <section id="home" class="collection">
+      <div class="container">
+        <div class="collection-inner">
+          <div class="collection-inner__left">
+            <h1 class="collection-inner__left-title">Premium collection</h1>
+            <p class="collection-inner__left-text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismorem ipsum dolor sit amet, consectetuer
+              adipiscing elit
+            </p>
+            <span class="collection-inner__left-price">£2,300</span>
+            <button class="collection-inner__left-btn">
+              View the collection
+            </button>
+          </div>
+          <div class="collection-inner__right">
+            <img
+              class="collection-inner__right-img"
+              src="./images/collection/collection.jpg"
+              alt="collection"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="armchairs" class="furniture">
       <div class="container">
         <div class="furniture-inner">
           <div class="furniture-inner__left">
@@ -113,7 +122,7 @@
       </div>
     </section>
 
-    <section class="discounts">
+    <section id="discounts" class="discounts">
       <div class="container">
         <div class="discounts-inner">
           <h2 class="discounts-inner__title">Special discounts</h2>
@@ -124,9 +133,9 @@
           </nav>
           <div class="discounts-inner__tabs">
             <div id="chair" class="discounts-inner__tab">
-              <div class="discounts-inner__tab-hair">
+              <div class="discounts-inner__tab-elem">
                 <img
-                  class="discounts-inner__tab-hair__img"
+                  class="discounts-inner__tab-elem__img"
                   src="./images/discouns/chair.jpg"
                   alt="hair"
                 />
@@ -145,14 +154,14 @@
                     src="./images/discouns/delivery.png"
                     alt="delivery"
                   />
-                  <button class="discounts-inner__tab__btn">
+                  <button class="discounts-inner__tab-btn">
                     View armchairs
                   </button>
                 </div>
               </div>
-              <div class="discounts-inner__tab-hair">
+              <div class="discounts-inner__tab-elem">
                 <img
-                  class="discounts-inner__tab-hair__img"
+                  class="discounts-inner__tab-elem__img"
                   src="./images/discouns/chair2.jpg"
                   alt="hair"
                 />
@@ -171,14 +180,14 @@
                     src="./images/discouns/delivery.png"
                     alt="delivery"
                   />
-                  <button class="discounts-inner__tab__btn">
+                  <button class="discounts-inner__tab-btn">
                     View armchairs
                   </button>
                 </div>
               </div>
-              <div class="discounts-inner__tab-hair">
+              <div class="discounts-inner__tab-elem">
                 <img
-                  class="discounts-inner__tab-hair__img"
+                  class="discounts-inner__tab-elem__img"
                   src="./images/discouns/chair3.jpg"
                   alt="hair"
                 />
@@ -197,16 +206,16 @@
                     src="./images/discouns/delivery.png"
                     alt="delivery"
                   />
-                  <button class="discounts-inner__tab__btn">
+                  <button class="discounts-inner__tab-btn">
                     View armchairs
                   </button>
                 </div>
               </div>
             </div>
             <div id="table" class="discounts-inner__tab">
-              <div class="discounts-inner__tab-table">
+              <div class="discounts-inner__tab-elem">
                 <img
-                  class="discounts-inner__tab-table__img"
+                  class="discounts-inner__tab-elem__img"
                   src="./images/discouns/table.jpg"
                   alt="table"
                 />
@@ -225,14 +234,14 @@
                     src="./images/discouns/delivery.png"
                     alt="delivery"
                   />
-                  <button class="discounts-inner__tab__btn">
+                  <button class="discounts-inner__tab-btn">
                     View Tri-post table
                   </button>
                 </div>
               </div>
-              <div class="discounts-inner__tab-table">
+              <div class="discounts-inner__tab-elem">
                 <img
-                  class="discounts-inner__tab-table__img"
+                  class="discounts-inner__tab-elem__img"
                   src="./images/discouns/table2.jpg"
                   alt="table"
                 />
@@ -251,14 +260,14 @@
                     src="./images/discouns/delivery.png"
                     alt="delivery"
                   />
-                  <button class="discounts-inner__tab__btn">
+                  <button class="discounts-inner__tab-btn">
                     View Tri-post table
                   </button>
                 </div>
               </div>
-              <div class="discounts-inner__tab-table">
+              <div class="discounts-inner__tab-elem">
                 <img
-                  class="discounts-inner__tab-table__img"
+                  class="discounts-inner__tab-elem__img"
                   src="./images/discouns/table3.jpg"
                   alt="table"
                 />
@@ -277,16 +286,16 @@
                     src="./images/discouns/delivery.png"
                     alt="delivery"
                   />
-                  <button class="discounts-inner__tab__btn">
+                  <button class="discounts-inner__tab-btn">
                     View Tri-post table
                   </button>
                 </div>
               </div>
             </div>
             <div id="luminaire" class="discounts-inner__tab">
-              <div class="discounts-inner__tab-luminaire">
+              <div class="discounts-inner__tab-elem">
                 <img
-                  class="discounts-inner__tab-luminaire__img"
+                  class="discounts-inner__tab-elem__img"
                   src="./images/discouns/luminaire.jpeg"
                   alt="luminaire"
                 />
@@ -305,14 +314,14 @@
                     src="./images/discouns/delivery.png"
                     alt="delivery"
                   />
-                  <button class="discounts-inner__tab__btn">
+                  <button class="discounts-inner__tab-btn">
                     View Pixar lamp
                   </button>
                 </div>
               </div>
-              <div class="discounts-inner__tab-luminaire">
+              <div class="discounts-inner__tab-elem">
                 <img
-                  class="discounts-inner__tab-luminaire__img"
+                  class="discounts-inner__tab-elem__img"
                   src="./images/discouns/luminaire2.jpg"
                   alt="luminaire"
                 />
@@ -331,14 +340,14 @@
                     src="./images/discouns/delivery.png"
                     alt="delivery"
                   />
-                  <button class="discounts-inner__tab__btn">
+                  <button class="discounts-inner__tab-btn">
                     View Pixar lamp
                   </button>
                 </div>
               </div>
-              <div class="discounts-inner__tab-luminaire">
+              <div class="discounts-inner__tab-elem">
                 <img
-                  class="discounts-inner__tab-luminaire__img"
+                  class="discounts-inner__tab-elem__img"
                   src="./images/discouns/luminaire3.jpg"
                   alt="luminaire"
                 />
@@ -357,7 +366,7 @@
                     src="./images/discouns/delivery.png"
                     alt="delivery"
                   />
-                  <button class="discounts-inner__tab__btn">
+                  <button class="discounts-inner__tab-btn">
                     View Pixar lamp
                   </button>
                 </div>
@@ -368,7 +377,7 @@
       </div>
     </section>
 
-    <section class="gallery">
+    <section id="gallery" class="gallery">
       <div class="container">
         <div class="gallery-cards grid_first">
           <a href="#!" class="gallery-card">
@@ -470,81 +479,81 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <footer id="contacts" class="footer">
       <div class="container">
         <div class="footer-inner">
           <div class="footer-inner__left">
             <div class="footer-inner__left-depart">
-              <ul>
-                <li>
+              <ul class="footer-inner__left-lists">
+                <li class="footer-inner__left-list">
                   <h6 class="footer-inner__left-depart__title">Living room</h6>
                 </li>
-                <li>
+                <li class="footer-inner__left-list">
                   <a class="footer-inner__left-depart__link" href="#!"
                     >Sofas/chairs</a
                   >
                 </li>
-                <li>
+                <li class="footer-inner__left-list">
                   <a class="footer-inner__left-depart__link" href="#!"
                     >Lorem ipsum</a
                   >
                 </li>
-                <li>
+                <li class="footer-inner__left-list">
                   <a class="footer-inner__left-depart__link" href="#!"
                     >Dolor sit amet</a
                   >
                 </li>
-                <li>
+                <li class="footer-inner__left-list">
                   <a class="footer-inner__left-depart__link" href="#!"
                     >Consectetuer</a
                   >
                 </li>
               </ul>
-              <ul>
-                <li>
+              <ul class="footer-inner__left-lists">
+                <li class="footer-inner__left-list">
                   <h6 class="footer-inner__left-depart__title">Bedroom</h6>
                 </li>
-                <li>
+                <li class="footer-inner__left-list">
                   <a class="footer-inner__left-depart__link" href="#!"
                     >Lorem ipsum</a
                   >
                 </li>
-                <li>
+                <li class="footer-inner__left-list">
                   <a class="footer-inner__left-depart__link" href="#!"
                     >Dolor sit amet</a
                   >
                 </li>
-                <li>
+                <li class="footer-inner__left-list">
                   <a class="footer-inner__left-depart__link" href="#!"
                     >Consectetuer</a
                   >
                 </li>
               </ul>
-              <ul>
-                <li>
+              <ul class="footer-inner__left-lists">
+                <li class="footer-inner__left-list">
                   <h6 class="footer-inner__left-depart__title">Bathoom</h6>
                 </li>
-                <li>
+                <li class="footer-inner__left-list">
                   <a class="footer-inner__left-depart__link" href="#!"
                     >Sofas/chairs</a
                   >
                 </li>
-                <li>
+                <li class="footer-inner__left-list">
                   <a class="footer-inner__left-depart__link" href="#!"
                     >Lorem ipsum</a
                   >
                 </li>
               </ul>
-              <ul>
-                <li>
+              <ul class="footer-inner__left-lists">
+                <li class="footer-inner__left-list">
                   <h6 class="footer-inner__left-depart__title">Bathoom</h6>
                 </li>
-                <li>
+                <li class="footer-inner__left-list">
                   <a class="footer-inner__left-depart__link" href="#!"
                     >Sofas/chairs</a
                   >
                 </li>
-                <li>
+                <li class="footer-inner__left-list">
                   <a class="footer-inner__left-depart__link" href="#!"
                     >Lorem ipsum
                   </a>
@@ -552,33 +561,33 @@
               </ul>
             </div>
             <div class="footer-inner__left-contact">
-              <ul>
-                <li>
+              <ul class="footer-inner__left-lists">
+                <li class="footer-inner__left-list">
                   <h6 class="footer-inner__left-contact__title">
                     Customer support
                   </h6>
                 </li>
-                <li>
+                <li class="footer-inner__left-list">
                   <a class="footer-inner__left-contact__link" href="#!"
                     >Call 01482 128394</a
                   >
                 </li>
-                <li>
+                <li class="footer-inner__left-list">
                   <a class="footer-inner__left-contact__link" href="#!"
                     >Send us a message</a
                   >
                 </li>
               </ul>
-              <ul>
-                <li>
+              <ul class="footer-inner__left-lists">
+                <li class="footer-inner__left-list">
                   <h6 class="footer-inner__left-contact__title">The team</h6>
                 </li>
-                <li>
+                <li class="footer-inner__left-list">
                   <a class="footer-inner__left-contact__link" href="#!"
                     >About us</a
                   >
                 </li>
-                <li>
+                <li class="footer-inner__left-list">
                   <a class="footer-inner__left-contact__link" href="#!"
                     >Team careers</a
                   >
@@ -588,29 +597,17 @@
           </div>
           <div class="footer-inner__right">
             <div class="footer-inner__right-bottom">
-              <a href="#!"
-                ><img
-                  class="footer-inner__right-img"
-                  src="./images/footer/facebook.png"
-                  alt="facebook"
+              <a class="footer-inner__right-link" href="#!"
+                ><img src="./images/footer/facebook.png" alt="facebook"
               /></a>
-              <a href="#!"
-                ><img
-                  class="footer-inner__right-img"
-                  src="./images/footer/instagram.png"
-                  alt="instagram"
+              <a class="footer-inner__right-link" href="#!"
+                ><img src="./images/footer/instagram.png" alt="instagram"
               /></a>
-              <a href="#!"
-                ><img
-                  class="footer-inner__right-img"
-                  src="./images/footer/twitter.png"
-                  alt="twitter"
+              <a class="footer-inner__right-link" href="#!"
+                ><img src="./images/footer/twitter.png" alt="twitter"
               /></a>
-              <a href="#!"
-                ><img
-                  class="footer-inner__right-img"
-                  src="./images/footer/pinterest.png"
-                  alt="pinterest"
+              <a class="footer-inner__right-link" href="#!"
+                ><img src="./images/footer/pinterest.png" alt="pinterest"
               /></a>
             </div>
           </div>
