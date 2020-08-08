@@ -71,3 +71,7 @@ function burger() {
 }
 
 burger();
+
+// wow
+
+new WOW().init();

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="page description" />
     <title>shop</title>
-
+    <link rel="stylesheet" href="./css/animate.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/media.css" />
   </head>
@@ -73,7 +73,10 @@
     <section id="home" class="collection">
       <div class="container">
         <div class="collection-inner">
-          <div class="collection-inner__left">
+          <div
+            class="collection-inner__left wow animate__flip-in-x"
+            data-wow-duration="2s"
+          >
             <h1 class="collection-inner__left-title">Premium collection</h1>
             <p class="collection-inner__left-text">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -106,7 +109,10 @@
               alt="furniture"
             />
           </div>
-          <div class="furniture-inner__right">
+          <div
+            class="furniture-inner__right wow animate__flip-in-x"
+            data-wow-duration="2s"
+          >
             <span class="furniture-inner__right__text1">Living room</span>
             <h1 class="furniture-inner__right-title">Minimalist furniture</h1>
             <p class="furniture-inner__right-text2">
@@ -131,7 +137,10 @@
             <a href="#table" class="discounts-inner__item">Table</a>
             <a href="#luminaire" class="discounts-inner__item">Luminaire</a>
           </nav>
-          <div class="discounts-inner__tabs">
+          <div
+            class="discounts-inner__tabs wow animate__zoom-in"
+            data-wow-duration="2s"
+          >
             <div id="chair" class="discounts-inner__tab">
               <div class="discounts-inner__tab-elem">
                 <img
@@ -449,7 +458,12 @@
       <div class="container">
         <div class="join-inner">
           <div class="join-inner__left">
-            <h4 class="join-inner__left-title">Join our mailing list</h4>
+            <h4
+              class="join-inner__left-title wow animate__flip-in-y"
+              data-wow-duration="2s"
+            >
+              Join our mailing list
+            </h4>
             <p class="join-inner__left-text">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
               nonummy nibh euismorem Lorem ipsum dolor sit amet, consectetuer
@@ -567,8 +581,13 @@
                     Customer support
                   </h6>
                 </li>
-                <li class="footer-inner__left-list">
-                  <a class="footer-inner__left-contact__link" href="#!"
+                <li
+                  class="footer-inner__left-list wow animate__flip-in-y"
+                  data-wow-duration="2s"
+                >
+                  <a
+                    class="footer-inner__left-contact__link"
+                    href="tel:01482128394"
                     >Call 01482 128394</a
                   >
                 </li>
@@ -596,7 +615,10 @@
             </div>
           </div>
           <div class="footer-inner__right">
-            <div class="footer-inner__right-bottom">
+            <div
+              class="footer-inner__right-bottom wow animate__flip-in-y"
+              data-wow-duration="2s"
+            >
               <a class="footer-inner__right-link" href="#!"
                 ><img src="./images/footer/facebook.png" alt="facebook"
               /></a>
@@ -622,6 +644,7 @@
       </div>
     </footer>
 
+    <script src="./js/wow.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
