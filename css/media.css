@@ -253,6 +253,12 @@
     border: 1px solid #000;
   }
 
+  /* Discounts  */
+
+  .discounts-inner__tab-middle {
+    opacity: 1;
+  }
+
   /* Footer */
 
   .footer-inner__left-depart,
